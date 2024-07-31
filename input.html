@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>新規登録｜YSE 講師データベース</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.php">YSE 講師データベース</a></h1>
+    </header>
+    <main>
+        <h2>新規登録</h2>
+    <form action="input_do.php" method="post">
+        <table>
+            <tr>
+                <th>講師ID</th>
+                <th>講師名 <span class="req">必須</span></th>
+                <th>メールアドレス <span class="req">必須</span></th>
+                <th>携帯電話番号</th>
+                <th>常勤/非常勤 <span class="req">必須</span></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>（自動）</td>
+                <td><input type="text" name="staffname"></td>
+                <td><input type="email" name="email"></td>
+                <td><input type="tel" name="tel"></td>
+                <td><input type="radio" name="stafftype" value="0">常勤
+                    <input type="radio" name="stafftype" value="1">非常勤</td>
+                <td><input type="submit" value="登録"></td>
+            </tr>
+        </table>
+    </form>
+    <p><a href="index.php">&laquo; 戻る</a>
+    </main>
+
+    <footer>
+        <p>Created by Sgroup.</p>
+    </footer>
+</body>
+</html>
